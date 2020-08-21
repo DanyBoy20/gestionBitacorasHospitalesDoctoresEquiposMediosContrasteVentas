@@ -1,0 +1,132 @@
+
+/* ---- HOSPITALES ---- */
+.boton{
+  display: grid;
+  justify-content: space-between;
+  grid-template-columns: 50% 50%; /*Make the grid smaller than the container*/
+  grid-gap: 10px;
+  align-content: end;
+  padding: 10px;
+}
+
+.boton> div {
+  text-align: left;
+  padding: 5px 0;
+}
+
+.titulo {
+  padding: 5px;
+  text-align: center;
+  background: #1976D2;
+  color: white;
+}
+
+.fila {  
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.lado {
+  flex: 30%;
+  background-color: #cfe4f9;
+  padding: 10px 10px;
+  color: #49494a;
+  line-height: 1.5em;
+}
+
+.lado p{
+  font-size: .8em;
+}
+
+.principal {
+  flex: 70%;
+  background-color: white;
+  color: #49494a;
+  line-height: 1.5em;
+  padding: 10px 10px;
+}
+
+.principal p{
+  font-size: .8em;
+}
+
+.pie {
+  width: 100%;
+  padding: 10px;
+  text-align: left;
+  /*background: #84bffa;*/
+  color: #49494a;
+}
+
+
+/* ---- INYECTORES ---- */
+
+*#verinyectores{
+  display: none;
+}
+
+#inyectores {  
+  padding: 0;
+  width: 100%;
+  margin-top:10px;
+  border-collapse: collapse;
+}
+
+#inyectores tr {
+  background: #f8f8f8;
+  border: 1px solid #ddd;
+  padding: .35em;
+}
+
+#inyectores tr:nth-child(even){background-color: #ffffff;}
+#inyectores tr:nth-child(odd){background-color: #cfe4f9;}
+
+#inyectores th, table td {
+  padding: .4em;
+  text-align: center;
+  font-size: .8em;
+  color:#49494a;
+}
+
+#inyectores th {
+  font-size: .8em;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  padding: .4em;
+  background: #1976D2;
+  color: #fff;
+}
+
+/* ---- MEDIA QUERIES ----*/
+@media screen and (max-width: 600px) {
+
+  .fila {   
+    flex-direction: column;
+  }
+
+  #inyectores { border: 0; }
+
+  #inyectores thead { display: none; }
+
+  #inyectores tr {
+    border-bottom: 3px solid #1976D2;
+    display: block;
+    margin-bottom: .625em;
+  }
+
+  #inyectores td {
+    border-bottom: 1px solid #5494d3;
+    display: block;
+    font-size: .8em;
+    text-align: right;
+  }
+
+  #inyectores td:before {
+    content: attr(data-label);
+    float: left;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  #inyectores td:last-child { border-bottom: 0; }
+}

@@ -1,0 +1,286 @@
+/* ------------------ BITACORA PAGINA PRINCIPAL ----------- */
+
+#bitacorasB > *{
+  /*background: #cfe4f9;*/
+  padding: 5px 5px;
+
+}
+
+#bitacorasB p{
+  font-size: .9em;
+  color:#49494a;
+}
+
+#bitacorasB h4{
+  color:#49494a;
+}
+
+#bitacorasB{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: minmax(30px, auto);
+  grid-gap: 5px;
+  grid-template-areas: 
+  "tituloB tituloB"
+  "nuevaB seguimientoB";
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.tituloB{
+  grid-area: tituloB;
+  align-self: center;
+  justify-self: start;
+}
+
+.busquedaB{
+  grid-area: busquedaB;
+  justify-self: start;
+}
+
+.nuevaB{
+  grid-area: nuevaB;
+  justify-self: center;
+}
+
+.seguimientoB{
+  grid-area: seguimientoB;
+  justify-self: end;
+}
+
+/* FIN BITACORA PAGINA PRINCIPAL */
+
+/* TABLA BITACORAS */
+
+.pie {
+  width: 100%;
+  padding: 10px;
+  text-align: left;
+  background: transparent;
+  color: #49494a;
+}
+
+*#verinyectores{
+  display: none;
+}
+
+#bseguimientos {  
+  padding: 0;
+  width: 100%;
+  margin-top:10px;
+}
+
+#bseguimientos tr {
+  background: #f8f8f8;
+  border: 1px solid #ddd;
+  padding: .35em;
+}
+
+#bseguimientos tr:nth-child(even){background-color: #ffffff;}
+#bseguimientos tr:nth-child(odd){background-color: #cfe4f9;}
+
+#bseguimientos th, table td {
+  padding: .4em;
+  text-align: center;
+  font-size: .8em;
+  color:#49494a;
+}
+
+#bseguimientos th {
+  font-size: .8em;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  padding: .4em;
+  background: #1976D2;
+  color: #fff;
+}
+
+/* FIN TABLA BITACORAS*/
+
+/* NUEVA BITACORA */
+
+#registroB > *{
+  background: #cfe4f9;
+  padding: 5px 5px;
+
+}
+
+#registroB p{
+  font-size: .9em;
+  color:#49494a;
+}
+
+#registroB h4{
+  color:#49494a;
+}
+
+#registroB{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: minmax(30px, auto);
+  grid-gap: 5px;
+  grid-template-areas: 
+  "tituloNB fechaNB"
+  "hospitalNB doctorNB"
+  "informacionNB informacionNB"
+  "guardarNB guardarNB";
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.tituloNB{
+  grid-area: tituloNB;
+  align-self: center;
+  justify-self: start;
+}
+
+.fechaNB{
+  grid-area: fechaNB;
+  justify-self: end;
+}
+
+.hospitalNB{
+  grid-area: hospitalNB;
+}
+
+.doctorNB{
+  grid-area: doctorNB;
+}
+
+.informacionNB{
+  grid-area: informacionNB;
+}
+
+.guardarNB{
+  grid-area: guardarNB;
+}
+
+/* FIN NUEVA BITACORA */
+
+/* SEGUIMIENTO BITACORA */
+
+#bitacoraseguimiento > *{
+  background: #cfe4f9;
+  padding: 5px 5px;
+
+}
+
+#bitacoraseguimiento p{
+  font-size: .9em;
+  color:#49494a;
+}
+
+#bitacoraseguimiento h4{
+  color:#49494a;
+}
+
+#bitacoraseguimiento{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: minmax(30px, auto);
+  grid-gap: 5px;
+  grid-template-areas: 
+  "seguimientobt seguimientobt"
+  "hospitalbt fechabt"
+  "nombrevbt nombredrbt"
+  "informacionbt informacionbt"
+  "tseguimientos tseguimientos"
+  "actbt actbt"
+  "actualizarbt actualizarbt"
+  "guardarseguimiento guardarseguimiento";
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.seguimientobt{
+  grid-area: seguimientobt;
+}
+
+.hospitalbt{
+  grid-area: hospitalbt;
+}
+
+.fechabt{
+  grid-area: fechabt;
+}
+
+.nombrevbt{
+  grid-area: nombrevbt;
+}
+
+.nombredrbt{
+  grid-area: nombredrbt;
+}
+
+.informacionbt{
+  grid-area: informacionbt;
+}
+
+.tseguimientos{
+  grid-area: tseguimientos;
+  background: transparent;
+}
+
+.actbt{
+  grid-area: actbt;
+}
+
+.actualizarbt{
+  grid-area: actualizarbt;
+}
+
+.guardarseguimiento{
+  grid-area: guardarseguimiento;
+}
+
+/* FIN SEGUIMIENTO BITACORA */
+
+/* MEDIA QUERIES*/
+
+@media screen and (max-width: 600px){
+  #bitacorasB{
+    grid-template-areas: 
+    "tituloB tituloB" 
+    "nuevaB nuevaB"
+    "seguimientoB";
+    max-width: 960px;
+  }
+
+  .busquedaB{
+    justify-self: start;
+  }
+
+  .nuevaB{
+    justify-self: start;
+  }
+  
+  .seguimientoB{
+    justify-self: end;
+  }
+
+  #registroB{
+    grid-template-areas: 
+    "tituloNB fechaNB"
+    "hospitalNB hospitalNB" 
+    "doctorNB doctorNB"
+    "informacionNB informacionNB"
+    "guardarNB guardarNB";
+    max-width: 960px;
+    margin: 0 auto;
+  }
+
+  #bitacoraseguimiento{
+    grid-template-areas: 
+    "seguimientobt seguimientobt"
+    "hospitalbt hospitalbt"
+    "fechabt fechabt"
+    "nombrevbt nombrevbt"
+    "nombredrbt nombredrbt"
+    "informacionbt informacionbt"
+    "tseguimientos tseguimientos"
+    "actbt actbt"
+    "actualizarbt actualizarbt"
+    "guardarseguimiento guardarseguimiento";
+  }
+
+}

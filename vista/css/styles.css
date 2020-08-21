@@ -1,0 +1,315 @@
+@import url(hospitales.css);
+@import url(inyectoresform.css);
+@import url(registroHospitales.css);
+@import url(registroContactos.css);
+@import url(bitacora.css);
+
+/* ---- FORMATEO DE ESTILOS ---- */
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: sans-serif;
+}
+
+body{
+	font-size: 16px;
+	background: #fff;
+}
+
+main{
+	width: 100%;
+	margin-bottom: 0px;
+	padding: 0px;
+}
+
+section{
+	text-align: center;
+}
+
+/* ---- INGRESO ---- */
+
+#backIngreso{
+	position:relative;
+	height:100vh;
+	background:linear-gradient(rgba(0,0,150,1), rgba(0,100,200,1));
+}
+
+form#formIngreso{
+	position:absolute;
+	border-radius:5px;
+	box-shadow:0px 0px 10px #001;
+	width:350px;
+	height:auto;
+	left:50%;
+	top:30px;
+	margin-left:-200px;
+	margin-top:20px;
+	background:#eee;
+	padding:0px 20px 0px 20px;
+}
+
+form h1#tituloFormIngreso{
+	display:block;
+	width:100%;
+	text-align:center;
+	font-size: 14px;
+	line-height:50px;
+	background:#333;
+	color:white;
+}
+
+#backIngreso p.tituloin{
+	font-size: .9em;
+	color:#49494a;
+	text-align: center;
+}
+
+form p#popuperror{
+	display:block;
+	width:auto;
+	text-align:center;
+	font-size: .9em;
+	line-height:35px;
+	background: rgba(255,78,0,0.5);
+	border: 1px solid rgba(134, 48, 9, .5);
+	border-radius: 5px 5px;
+	color:white;
+}
+
+
+form input.formIngreso{
+	margin:10px 30px;
+}
+
+/* ---- FIN INGRESO ---- */
+
+/* ---- ESTILOS GENERALES ---- */
+.botones {
+	background-color:#1975d2;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size: .8em;
+	padding:15px 15px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #1f1f1f;
+}
+.botones:hover {
+	background-color:#329ced;
+}
+.botones:active {
+	position:relative;
+	top:1px;
+}
+
+.ventanaaviso{
+
+}
+
+/* ---- ENCABEZADO ---- */
+
+.encabezado{
+	width: 100%;
+	background: #1976D2;
+	margin: 0;
+	padding: 10px 15px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	border-bottom: 1px solid #fff;
+}
+
+.logo img{
+	height: 60px;
+}
+
+.usuario{
+	color: #fff;
+	box-sizing: content-box;
+	z-index: 100;
+}
+
+#chkusu{
+	display: none;
+}
+
+.usuario label:hover{
+	cursor: pointer;
+}
+
+.foto{
+	width: 23px;
+	vertical-align: middle;
+	overflow: hidden;
+}
+
+p.datos{
+	display: inline-block;
+	text-align: center;
+	font-size: .875em;
+}
+
+.menuusuario{
+	display: none;
+	background: rgba(16, 65, 114, .8);
+	position: absolute;
+	width: 120px;
+	margin: 10px -30px;
+	border: 1px solid rga(255, 255, 255, .6);
+	border-radius: 5px;
+}
+
+.menuusuario ul{
+	list-style: none;
+	padding: 5px;
+}
+
+.menuusuario ul li a{
+	text-decoration: none;
+	line-height: 2em;
+	color: white;
+	padding: 5px;
+}
+
+#chkusu:checked ~ .menuusuario{
+	display: block;
+
+}
+
+/* ---- BARRA DE NAVEGACION ---- */
+
+.navegacion{
+	width: 100%;
+	background: #2196F3;
+	margin: 0px;
+	padding: 0px;
+}
+
+#check{
+	display: none;
+}
+
+.navegacion label{
+	display: none;
+	width: 40px;
+	height: 40px;
+	padding: 5px
+}
+
+.navegacion label:hover{
+	cursor: pointer;
+	background: rgba(0, 0, 0, 0.2)
+}
+
+.menu_navegacion{
+	width: 100%;
+	background: #2196F3;
+	margin: 0px;
+	padding: 0px;
+}
+
+.menu_navegacion ul{
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+	display: flex;
+}
+
+.menu_navegacion li{
+	text-align: center;
+}
+
+.menu_navegacion li:hover{
+	background: rgba(0, 0, 0, 0.2)
+}
+
+.menu_navegacion li a{
+	display: block;
+	padding: 10px 20px;
+	text-decoration: none;
+	color: #fff;
+}
+
+/* ---- CONTENEDOR INICIO ---- */
+
+/* ***pagina de inicio *** */
+#inicio{
+	margin-top: 0px;
+	position: relative;
+}
+
+#inicio img{
+	width: 100%;
+	height: 100%;
+}
+
+#inicio .content{	
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translateX(-50%) translateY(-50%);
+	color: #135a9f;
+	text-align: center;
+}
+
+#inicio h1{
+	text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+	text-shadow: 0.075em 0.08em 0.1em rgba(25, 118, 210, 1);
+}
+/** *** fin pagina de inicio *** */
+
+
+/* ---- PIE DE PAGINA ---- */
+
+footer{
+	width: 100%;
+	background: #1976D2;
+	margin: 0;
+	padding: 1px 15px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	border-bottom: 1px solid #fff;
+	color: #fff;
+}
+
+/* ---- MEDIA QUERIES ---- */
+
+@media screen and (max-width: 600px){
+
+	.navegacion label{
+		display: block;
+	}
+
+	.menu_navegacion{
+		position: absolute;
+		background: #2196F3;
+		width: 50%;
+		margin-left: -50%;	
+		transition: all 0.5s;	
+		z-index: 90;
+	}
+
+	.menu_navegacion ul{
+		flex-direction: column;
+	}
+
+	.menu_navegacion li{
+		text-align: left;
+		border-top: 1px solid rgba(255, 255, 255, 0.2)
+	}
+
+	#check:checked ~ .menu_navegacion{
+		margin: 0px;
+		
+	}
+	
+}
+
+
+
+

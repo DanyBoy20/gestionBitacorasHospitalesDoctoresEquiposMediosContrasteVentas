@@ -1,0 +1,213 @@
+input[type=text], select, textarea {
+  width: 60%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+input[type=email] {
+  width: 60%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+input[type=password] {
+  width: 60%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+input[type=number] {
+  width: 60%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+input[type=submit] {
+  background-color:#1975d2;
+  display:inline-block;
+  cursor:pointer;
+  color:#ffffff;
+  font-family:Arial;
+  font-size: .8em;
+  padding: 15px 15px;
+  text-decoration:none;
+  text-shadow:0px 1px 0px #1f1f1f;
+  border: 0px;
+  /*float: left;*/
+}
+
+input[type=submit]:hover {
+  background-color:#329ced;
+}
+
+/*input[type=submit]:active {
+  position:relative;
+  top:1px;
+  padding: 5px;
+}
+*/
+/* INICIO FORMATO FORMULARIO REGISTRO INTECTOR */
+/* ------------------R E G I S T R O ----------- */
+
+#registroInyectores > *{
+  background: #cfe4f9;
+  padding: 5px 5px;
+
+}
+
+#registroInyectores p{
+  font-size: .9em;
+  color:#49494a;
+}
+
+#registroInyectores h4{
+  color:#49494a;
+}
+
+#registroInyectores{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: minmax(30px, auto);
+  grid-gap: 5px;
+  grid-template-areas: 
+  "tituloI tituloI"
+  "nombreI tipoI"
+  "descripcionI descripcionI"
+  "guardarI guardarI";
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.tituloI{
+  grid-area: tituloI;
+  align-self: center;
+  justify-self: start;
+  background: transparent;
+}
+
+.nombreI{
+  grid-area: nombreI;
+}
+
+.descripcionI{
+  grid-area: descripcionI;
+}
+
+.tipoI{
+  grid-area: tipoI;
+}
+
+.guardarI{
+  grid-area: guardarI;
+  justify-self: center;
+}
+
+/* ------------------ A S I G N A C I O N ----------- */
+
+#asignacionInyectores > *{
+  background: #cfe4f9;
+  padding: 5px 5px;
+
+}
+
+#asignacionInyectores p{
+  font-size: .9em;
+  color:#49494a;
+}
+
+#asignacionInyectores h4{
+  color:#49494a;
+}
+
+#asignacionInyectores{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: minmax(30px, auto);
+  grid-gap: 5px;
+  grid-template-areas: 
+  "tituloAI tituloAI"
+  "hospitalAI tipoAI"
+  "cantidadAI comentariosAI"
+  "guardarAI guardarAI";
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.tituloAI{
+  grid-area: tituloAI;
+  align-self: center;
+  justify-self: start;
+  background: transparent;
+}
+
+.hospitalAI{
+  grid-area: hospitalAI;
+}
+
+.tipoAI{
+  grid-area: tipoAI;
+}
+
+.cantidadAI{
+  grid-area: cantidadAI;
+}
+
+.comentariosAI{
+  grid-area: comentariosAI;
+}
+
+.guardarAI{
+  grid-area: guardarAI;
+  justify-self: center;
+}
+
+/* FIN REGISTRO */
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 600px){
+  #registroInyectores{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: minmax(20px, auto);
+    grid-gap: 10px;
+    grid-template-areas: 
+    "tituloI tituloI"
+    "nombreI nombreI" 
+    "tipoI tipoI"
+    "descripcionI descripcionI"
+    "guardarI guardarI";
+    max-width: 960px;
+    margin: 0 auto;
+  }
+
+  #asignacionInyectores{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: minmax(30px, auto);
+    grid-gap: 5px;
+    grid-template-areas: 
+    "tituloAI tituloAI"
+    "hospitalAI hospitalAI"
+    "tipoAI tipoAI"
+    "cantidadAI cantidadAI"
+    "comentariosAI comentariosAI"
+    "guardarAI guardarAI";
+    max-width: 960px;
+    margin: 0 auto;
+  }
+
+}

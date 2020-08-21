@@ -1,0 +1,122 @@
+#registroHospitales > *{
+	background: #cfe4f9;
+	padding: 5px 5px;
+
+}
+
+#registroHospitales p{
+	font-size: .9em;
+	color:#49494a;
+}
+
+#registroHospitales h4{
+	color:#49494a;
+}
+
+#registroHospitales{
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-auto-rows: minmax(30px, auto);
+	grid-gap: 5px;
+	grid-template-areas: 
+	"tituloRegistro tituloRegistro"
+	"nombreHospital tipoHospital"
+	"direccionHospital direccionHospital"
+	"ciudadHospital estadoHospital"
+	"oportunidadHospital oportunidadHospital"
+	"contactosHospital contactosHospital"
+	"nombreCh puestoHospital"
+	"telefonoHospital emailHospital"
+	"guardarHospital guardarHospital";
+	max-width: 960px;
+	margin: 0 auto;
+}
+
+.tituloRegistro{
+	grid-area: tituloRegistro;
+	align-self: center;
+	justify-self: start;
+}
+
+.nombreHospital{
+	grid-area: nombreHospital;
+}
+
+.tipoHospital{
+	grid-area: tipoHospital;
+}
+
+.direccionHospital{
+	grid-area: direccionHospital;
+}
+
+.ciudadHospital{
+	grid-area: ciudadHospital;
+}
+
+.estadoHospital{
+	grid-area: estadoHospital;
+}
+
+.oportunidadHospital{
+	grid-area: oportunidadHospital;
+}
+
+.contactosHospital{
+	grid-area: contactosHospital;
+	align-self: center;
+	justify-self: start;
+	background: transparent;
+}
+
+.nombreCh{
+	grid-area: nombreCh;
+}
+
+.puestoHospital{
+	grid-area: puestoHospital;
+}
+
+.telefonoHospital{
+	grid-area: telefonoHospital;
+}
+
+.emailHospital{
+	grid-area: emailHospital;
+}
+
+.guardarHospital{
+	grid-area: guardarHospital;
+	justify-self: center;
+}
+
+/*.guardarHospitalagregar{
+	grid-area: guardarHospitalagregar;
+	justify-self: start;
+	}*/
+
+	@media screen and (max-width: 600px){
+		#registroHospitales{
+			display: grid;
+			grid-template-columns: repeat(2, 1fr);
+			grid-auto-rows: minmax(20px, auto);
+			grid-gap: 10px;
+			grid-template-areas: 
+			"tituloRegistro tituloRegistro"
+			"nombreHospital nombreHospital"
+			"tipoHospital tipoHospital"
+			"direccionHospital direccionHospital"
+			"ciudadHospital ciudadHospital" 
+			"estadoHospital estadoHospital"
+			"oportunidadHospital oportunidadHospital"
+			"contactosHospital contactosHospital"
+			"nombreCh nombreCh" 
+			"puestoHospital puestoHospital"
+			"telefonoHospital telefonoHospital"
+			"emailHospital emailHospital"
+			"guardarHospital guardarHospital";
+			max-width: 960px;
+			margin: 0 auto;
+		}
+
+	}
