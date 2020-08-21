@@ -10,4 +10,3 @@ class Enlaces{
 		include $respuesta;
 	}
 }
-?>

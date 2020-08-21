@@ -22,4 +22,3 @@ if(isset($_POST["hospitalid"])){
 	$c -> hospitalid = $_POST["hospitalid"];
 	$c -> seleccionarContactoHospitalAjax();	
 }
-?>

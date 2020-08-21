@@ -54,8 +54,7 @@ class GestorBitacorasModel{
 		}else{
 			return "error";
 		}
-		$stmt2->close();
+		$stmt->close();
 	}
 
 }
-?>

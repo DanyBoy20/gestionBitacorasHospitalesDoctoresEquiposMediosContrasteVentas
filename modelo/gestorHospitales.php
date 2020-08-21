@@ -69,4 +69,3 @@ class GestorHospitalModel{
 		$pdo->close(); 
 	}
 }
-?>

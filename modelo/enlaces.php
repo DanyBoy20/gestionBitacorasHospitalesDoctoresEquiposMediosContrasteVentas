@@ -20,4 +20,3 @@ class EnlacesModels{
 		return $module;
 	}
 }
-?>

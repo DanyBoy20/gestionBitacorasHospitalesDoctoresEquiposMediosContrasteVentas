@@ -10,4 +10,3 @@ class IngresoModels{
 		//$stmt -> close();
 	}
 }
-?>
