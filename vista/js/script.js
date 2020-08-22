@@ -34,7 +34,7 @@ function validarRegistroHospital(){
 	var telefonoch = document.querySelector("#telefonoch").value;
 	var emailch = document.querySelector("#emailch").value;
 	// valido nombre hospital
-	if(nombreh == "" || direccionh == "" || ciudadh == "" || estadoh == "" || areaoh == "" || nombrech = "" || puestoch = "" ||  telefonoch = "" ||  emailch == ""){
+	if(nombreh == "" || direccionh == "" || ciudadh == "" || estadoh == "" || areaoh == "" || nombrech == "" || puestoch == "" ||  telefonoch == "" ||  emailch == ""){
 		alert("CAMPOS VACIOS");
 		return false;
 	}

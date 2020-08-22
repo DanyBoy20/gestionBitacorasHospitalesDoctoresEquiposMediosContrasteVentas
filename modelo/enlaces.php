@@ -3,7 +3,7 @@
 class EnlacesModels{
 	static public function enlacesModel($enlaces){
 		if($enlaces == "inicio" || $enlaces == "ingreso" || $enlaces == "hospitales" || $enlaces == "bitacora" || $enlaces == "usuarios" || $enlaces == "salir" || $enlaces == "editarperfil" || $enlaces == "inyectores" || $enlaces == "nuevabitacora" || $enlaces == "registrocontactos" || $enlaces == "registrohospitales" || $enlaces == "seguimiento" || $enlaces == "seguimientobitacora" || $enlaces == "detallehospital" || $enlaces == "registroinyectores" || $enlaces == "filtrobitacora"){
-			$module = "vista/modulos/".$enlaces.".php";
+			$module = "vista/modulos/". $enlaces . ".php";
 		}else if($enlaces == "ok"){ 
 			$module =  "vista/modulos/hospitales.php";
 		}else if($enlaces == "creada"){ 

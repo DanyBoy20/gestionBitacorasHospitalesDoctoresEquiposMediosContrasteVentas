@@ -9,9 +9,9 @@ class Ingreso{
 				$_SESSION["validar"] = true;
 				$_SESSION["usuario"] = $respuesta["idpersonal"];
 				$_SESSION["nombre"] = $respuesta["nombrepersonal"];
-				//echo '<script> alert("bienvenido");</script>';
-				echo '<script> windows.location="inicio"</script>';
-				# header("Location:inicio");
+				// echo '<script> alert("bienvenido");</script>';
+				// echo '<script> windows.location="inicio"</script>';
+				header("location:inicio");
 			}else{
 				echo "<p id='popuperror'>DATOS INCORRECTOS</p>";
 			}
