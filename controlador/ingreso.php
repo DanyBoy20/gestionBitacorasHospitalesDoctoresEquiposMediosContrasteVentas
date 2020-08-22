@@ -10,7 +10,7 @@ class Ingreso{
 				$_SESSION["usuario"] = $respuesta["idpersonal"];
 				$_SESSION["nombre"] = $respuesta["nombrepersonal"];
 				//echo '<script> alert("bienvenido");</script>';
-				// echo '<script> windows.location = "inicio" ;</script>';
+				// echo '<script>window.location.href="inicio"</script>';
 				header("location:inicio");
 			}else{
 				echo "<p id='popuperror'>DATOS INCORRECTOS</p>";

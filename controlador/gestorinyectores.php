@@ -31,8 +31,10 @@ class GestorInyectores{
 			$datosController = array("hospitalAI"=>$_POST["hospitalAI"], "tipoAI"=>$_POST["tipoAI"], "cantidadAI"=>$_POST["cantidadAI"], "comentariosAI"=>$_POST["comentariosAI"]);
 			$respuesta = GestorInyectoresModel::asignarInyectorHospitalModel($datosController);
 			if($respuesta == "success"){
+				// echo '<script>window.location.href="bien"</script>';
 				header("Location:bien");
 			}else{ // y si no
+				// echo '<script>window.location.href="inicio"</script>';
 				header("Location:inicio");
 			}
 		}
@@ -43,8 +45,10 @@ class GestorInyectores{
 			$datosController = array("nombreI"=>$_POST["nombreI"], "descripcionI"=>$_POST["descripcionI"], "tipoI"=>$_POST["tipoI"]);
 			$respuesta = GestorInyectoresModel::registroInyectorlModel($datosController);
 			if($respuesta == "success"){
+				// echo '<script>window.location.href="bien"</script>';
 				header("Location:bien");
 			}else{ 
+				//echo '<script>window.location.href="inicio"</script>';
 				header("Location:inicio");
 			}
 		}		

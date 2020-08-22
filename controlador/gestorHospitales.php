@@ -78,8 +78,10 @@ class GestorHospital{
 			$datosController = array("hospitalnombre"=>$_POST["nombreh"], "hospitaltipo"=>$_POST["tipoh"], "hospitaldireccion"=>$_POST["direccionh"], "hospitalciudad"=>$_POST["ciudadh"], "hospitalestado"=>$_POST["estadoh"], "hospitalarea"=>$_POST["areaoh"], "contactonombre"=>$_POST["nombrech"], "contactopuesto"=>$_POST["puestoch"], "contactotelefono"=>$_POST["telefonoch"], "contactoemail"=>$_POST["emailch"]);
 			$respuesta = GestorHospitalModel::insertarHospitalModel($datosController);
 			if($respuesta == "success"){
+				// echo '<script>window.location.href="ok"</script>';
 				header("Location:ok");
 			}else{ // y si no
+				// echo '<script>window.location.href="inicio"</script>';
 				header("Location:inicio");
 			}
 		}
