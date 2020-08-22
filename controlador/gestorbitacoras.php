@@ -20,8 +20,10 @@ class GestorBitacoras{
 			$datosController = array("hospitalid"=>$_POST["hospitalNB"], "doctorid"=>$_POST["doctorNB"], "informacion"=>$_POST["informacionNB"], "personalid"=>$_POST["cve"]);
 			$respuesta = GestorBitacorasModel::nuevaBitacoraModel($datosController);
 			if($respuesta == "success"){
+				// echo '<script>window.location.href="creada"</script>';
 				header("Location:creada");
 			}else{ // y si no
+				// echo '<script>window.location.href="inicio"</script>';
 				header("Location:inicio");
 			}
 		}
@@ -86,8 +88,10 @@ class GestorBitacoras{
 			$datosController = array("bitacoraid"=>$_POST["identifica"], "comenta"=>$_POST["actualizarbt"]);
 			$respuesta = GestorBitacorasModel::actualizarBitacoraModel($datosController);
 			if($respuesta == "success"){
+				// echo '<script>window.location.href="actualizada"</script>';
 				header("Location:actualizada");
 			}else{ // y si no
+				// echo '<script>window.location.href="inicio"</script>';
 				header("Location:inicio");
 			}
 		}
