@@ -2,7 +2,7 @@
 
 ## Sistema destor de inyectores de medios de contraste, bitacoras de equipos, seguimiento de ventas y reportes de equipos.
 
-### PHP, JS, MySQL, JQuery, HTML5, CSS
+### PHP7, JS, MySQL, JQuery, HTML5, CSS
 
 __Registros:__
 
