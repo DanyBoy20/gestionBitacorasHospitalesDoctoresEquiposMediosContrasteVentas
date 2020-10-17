@@ -1,6 +1,6 @@
 # Proyecto: Gestor de Equipos Medicos y Hospitales (Venta / Soporte)
 
-## Sistema destor de inyectores de medios de contraste, bitacoras de equipos, seguimiento de ventas y reportes de equipos.
+## Sistema gestor de inyectores de medios de contraste, bitacoras de equipos, seguimiento de ventas y reportes de equipos.
 
 ### PHP7, JS, MySQL, JQuery, HTML5, CSS
 
